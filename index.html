@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Ahmed Mostafa" />
+    <meta
+      name="description"
+      content="A complete explanation of SEO: On-Page, Off-Page, and Technical SEO. Created by Ahmed Mostafa."
+    />
+    <meta
+      name="keywords"
+      content="SEO, On-Page SEO, Off-Page SEO, Technical SEO, Search Engine Optimization"
+    />
+    <title>S.E.O | Task 2 - Ahmed</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hidden"><h1>S.E.O</h1></div>
+
+    <h2 class="hidden">What's S.E.O?</h2>
+    <h3 class="hidden">S.E.O = Search Engine Optimization</h3>
+    <p class="hidden">This means optimizing your website to appear in Google search results.</p>
+
+    <h2 class="hidden">Why is S.E.O important?</h2>
+    <p class="hidden">
+      The higher your website appears in search results, the more likely people
+      are to visit it. This leads to increased traffic, more customers, and
+      higher revenue.
+    </p>
+    
+    <h2 class="hidden">Main Sections of SEO</h2>
+    <p class="hidden">SEO is divided into three main categories:</p>
+
+    <!-- On-Page SEO -->
+    <section class="hidden">
+      <h2 class="hidden">First: On-Page SEO</h2>
+
+      <h3 class="hidden">What appears in search results</h3>
+      <p class="hidden">When you search for a website, search engines typically show:</p>
+      <ul class="hidden">
+        <li class="hidden"><strong>Title</strong> (the blue link)</li>
+        <li class="hidden"><strong>Description</strong> (the short grey text)</li>
+      </ul>
+
+      <h3 class="hidden">Important factors to appear in the first results</h3>
+      <ol class="hidden">
+        <li class="hidden">
+          <strong>Use relevant keywords</strong> in title, URL, and meta
+          description.
+        </li>
+        <li class="hidden">
+          <strong>Write clean, efficient code</strong> — faster pages rank
+          better and improve user experience.
+        </li>
+        <li class="hidden">
+          <strong>Add proper <code>alt</code> text to images</strong>:
+          <pre class="hidden"><code>&lt;img src="cat.jpg" alt="Small orange kitten playing with a ball"&gt;</code></pre>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Off-Page SEO -->
+    <section class="hidden">
+      <h2 class="hidden">Second: Off-Page SEO</h2>
+
+      <h3 class="hidden">What happens outside your website</h3>
+      <p class="hidden">Search engines consider external factors like:</p>
+      <ul class="hidden">
+        <li class="hidden">
+          <strong>Backlinks:</strong> Links from other websites improve
+          authority.
+        </li>
+        <li class="hidden">
+          <strong>Social signals:</strong> Shares, likes, and comments show
+          popularity.
+        </li>
+      </ul>
+
+      <h3 class="hidden">How to improve Off-Page SEO</h3>
+      <ol class="hidden">
+        <li class="hidden">Publish high-quality content others will link to.</li>
+        <li class="hidden">Engage on social media to increase visibility.</li>
+        <li class="hidden">Build relationships with influencers.</li>
+      </ol>
+    </section>
+
+    <!-- Technical SEO -->
+    <section class="hidden">
+      <h2 class="hidden">Third: Technical SEO</h2>
+
+      <h3 class="hidden">How well your website is built</h3>
+      <p class="hidden">Technical SEO improves crawling and indexing. Important factors:</p>
+      <ul class="hidden">
+        <li class="hidden"><strong>Site speed</strong></li>
+        <li class="hidden"><strong>Mobile-friendliness</strong></li>
+        <li class="hidden"><strong>HTTPS security</strong></li>
+      </ul>
+
+      <h3 class="hidden">How to improve Technical SEO</h3>
+      <ol class="hidden">
+        <li class="hidden">Optimize speed (image compression, caching, minifying code).</li>
+        <li class="hidden">Use responsive design.</li>
+        <li class="hidden">Implement HTTPS.</li>
+      </ol>
+    </section>
+
+    <script>
+      console.log("SEO Task 2 by Ahmed Mostafa");
+      const author = {
+        name: "Ahmed Mostafa",
+        role: "Web Developer",
+        website_topic: "reasearch for SEO",
+      }
+      console.log(author);
+      const ob = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+          }
+        });
+      });
+      const hiddenElements = document.querySelectorAll(".hidden");
+      hiddenElements.forEach((el) => ob.observe(el));
+    </script>
+  </body>
+</html>
