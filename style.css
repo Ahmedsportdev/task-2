@@ -10,6 +10,7 @@ body, html{
     height: 100%;
     z-index: 0;
     color: #000;
+    overflow-x: hidden;
 }
 
 div{
